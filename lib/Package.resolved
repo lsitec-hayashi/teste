@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swifty-extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/milanpanchal/Swifty-Extensions",
+      "state" : {
+        "revision" : "e0a6807aed78ae7ddaa46d71dab388357fd74786",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}
