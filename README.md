@@ -13,3 +13,22 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.10/tkinter/__init__.py", line 37, in <module>
     import _tkinter # If this fails your Python may not be configured for Tk
 ModuleNotFoundError: No module named '_tkinter'
+
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt install -y make build-essential libssl-dev zlib1g-dev _\barra_
+       libbz2-dev libreadline-dev libsqlite3-dev wget curl
+
+wget https://www.python.org/ftp/python/3.10.11/Python-3.10.11.tgz
+
+tar xvf Python-3.10.11.tgz
+
+cd Python-3.10.11/
+
+./configure --enable-optimizations --with-ensurepip=install
+
+make
+
+sudo make install
