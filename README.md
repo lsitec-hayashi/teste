@@ -34,9 +34,16 @@ make
 sudo make install
 
 error
-out 08 11:21:00 labrador python3[1338]: Traceback (most recent call last):
+out 08 11:21:00 labrador python3[1338]: Traceback (most recent call last)
 out 08 11:21:00 labrador python3[1338]:   File "/home/caninos/Downloads/collect_machine-dev/main.py", line 1, in <module>
 out 08 11:21:00 labrador python3[1338]:     from screens import Home
 out 08 11:21:00 labrador python3[1338]:   File "/home/caninos/Downloads/collect_machine-dev/screens/Home.py", line 5, in <module>
 out 08 11:21:00 labrador python3[1338]:     from tkVideoPlayer import TkinterVideo
 out 08 11:21:00 labrador python3[1338]: ModuleNotFoundError: No module named 'tkVideoPlayer'
+
+.service
+caninos@labrador:/etc/systemd/system$ sudo nano collect_machine.service 
+caninos@labrador:/etc/systemd/system$ sudo systemctl daemon-reload
+caninos@labrador:/etc/systemd/system$ sudo systemctl enable collect_machine.service
+caninos@labrador:/etc/systemd/system$ sudo systemctl start collect_machine.service
+caninos@labrador:/etc/systemd/system$ journalctl -u collect_machine.service
