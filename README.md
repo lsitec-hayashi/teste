@@ -40,6 +40,16 @@ out 08 11:21:00 labrador python3[1338]:     from screens import Home
 out 08 11:21:00 labrador python3[1338]:   File "/home/caninos/Downloads/collect_machine-dev/screens/Home.py", line 5, in <module>
 out 08 11:21:00 labrador python3[1338]:     from tkVideoPlayer import TkinterVideo
 out 08 11:21:00 labrador python3[1338]: ModuleNotFoundError: No module named 'tkVideoPlayer'
+--
+out 09 12:12:32 labrador python3[5781]: Traceback (most recent call last):
+out 09 12:12:32 labrador python3[5781]:   File "/home/caninos/Downloads/teste.py", line 2, in <module>
+out 09 12:12:32 labrador python3[5781]:     m = tkinter.Tk()
+out 09 12:12:32 labrador python3[5781]:         ^^^^^^^^^^^^
+out 09 12:12:32 labrador python3[5781]:   File "/usr/lib/python3.11/tkinter/__init__.py", line 2326, in __init__
+out 09 12:12:32 labrador python3[5781]:     self.tk = _tkinter.create(screenName, baseName, className, interactive, wantobjects, useTk, sync, use)
+out 09 12:12:32 labrador python3[5781]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+out 09 12:12:32 labrador python3[5781]: _tkinter.TclError: no display name and no $DISPLAY environment variable
+--
 
 .service
 caninos@labrador:/etc/systemd/system$ sudo nano collect_machine.service 
